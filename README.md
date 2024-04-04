@@ -73,7 +73,7 @@ LLAMA2中只有十五个藏文字构建，分别是“་”、“ས”、“�
 
 
 ### 
-如果您有任何问题，欢迎联系crpengcuo13@yahoo.com
+如果您有任何问题，欢迎联系crpencuo13@gmail.com
 
 ## 致谢
 感谢LLAMA2研究开发人员及相关项目，感谢Chinese-LLaMA-Alpaca-2项目以及相关人员。
