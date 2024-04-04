@@ -56,6 +56,9 @@ LLAMA2中只有十五个藏文字构建，分别是“་”、“ས”、“�
 |     释义生成    	|     9.94                 	|     12.76                 	|
 |     文本分类    	|     76.63                	|     78.94                 	|
 |     Avg         	|     32.79                	|     38.78                 	|
+### 生成示例
+<img src="https://github.com/ymaoj/Tibetan-LLAMA2-Tibetan-Alpaca/1.png" width="210px">
+
 
 ## 致谢
 感谢LLAMA2研究开发人员及相关项目，感谢Chinese-LLaMA-Alpaca-2项目以及相关人员。
