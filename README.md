@@ -1,4 +1,12 @@
-# Tibetan-LLAMA2 & Tibetan-Alpaca
+
+<div align="center">
+    <h1>
+        Tibetan-LLAMA2 & Tibetan-Alpaca
+    </h1>
+</div>
+
+
+
 ## Tibetan-LLAMA2 & Tibetan-Alpaca藏文大语言模型
 本项目通过基于LORA的参数高效微调方法，训练了Tibetan-LLAMA2和Tibetan-Alpaca藏文大语言模型，以上模型是基于LLAMA2模型架构构建的，经过较大规模数据的增量预训练和指令微调，具备了对藏文的深入理解和处理能力。Tibetan-LLAMA2和Tibetan-Alpaca在藏文理解和生成任务中表现出了更高的效率和性能，并且在多个领域都有广泛的应用前景。
 ## 藏文词表扩充
