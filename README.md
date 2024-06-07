@@ -6,7 +6,7 @@
 </div>
 
 ## 🗂️ 目录
-- [ 🔥 Tibetan-Llama2 & Tibetan-Alpaca藏文大语言模型](#-Tibetan-Llama2 & Tibetan-Alpaca藏文大语言模型)
+- [ 🔥 Tibetan-Llama2 & Tibetan-Alpaca藏文大语言模型](#-Tibetan-Llama2&Tibetan-Alpaca藏文大语言模型)
   * [ 📌 藏文词表扩充](#-藏文词表扩充)
   * [ 🌟 参数设置](#-参数设置)
   * [ 🚀 实验数据介绍](#-实验数据介绍)
