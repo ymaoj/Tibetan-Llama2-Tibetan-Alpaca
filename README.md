@@ -52,7 +52,7 @@ Llama2中只有十五个藏文字构建，分别是“་”、“ས”、“�
 |     训练时长               	|     348h/673h                     	|     362h/535h                     	|
 
 ## 🚀 实验数据介绍
-对于Tibetan-Llama2模型，本文利用39.6GB的藏文纯文本对Llama2进行增量预训练，增强了模型对藏文语义的理解。在获得Tibetan-Llama2模型后对其进行指令微调，加入多种指令提示数据集，使用了大约715128条指令数据（4.37GB），包括开放问答、摘要生成、新闻生成、释义生成、时态生成以及文本分类等数据。所有Alpaca模型都是基于各自的Tibetan-Llama2模型进行训练的。例如，Tibetan-Alpaca-13B是在Tibetan-Llama2-13B上训练的。
+对于Tibetan-Llama2模型，本文利用39.6GB的藏文纯文本对Llama2进行增量预训练，增强了模型对藏文语义的理解。在获得Tibetan-Llama2模型后对其进行指令微调，加入多种指令提示数据集，使用了大约715128条指令数据（4.37GB），包括开放问答、摘要生成、新闻生成、释义生成、时态生成以及文本分类等数据。所有Alpaca模型都是基于各自的Tibetan-Llama2模型进行训练的。例如，Tibetan-Alpaca-13B是在Tibetan-Llama2-13B上训练的。模型是在2张 NVIDIA RTX A6000（显存48GB）上训练的，显存共96GB。
 
 
 |     <img width=60/>类型<img width=60/>        	|     <img width=170/>数量<img width=170/>      	|
