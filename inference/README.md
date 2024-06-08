@@ -4,7 +4,7 @@ Tibetan-Llama2为基座模型，不具有指令理解能力，推荐使用Tibeta
 ## 🎉 创建安装环境
 ```
 conda create -n tla python=3.9
-pip install -r requirement
+pip install -r requirements.txt
 ```
 
 ## 🤖 命令行交互形式
