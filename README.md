@@ -99,7 +99,7 @@ Llama2中只有十五个藏文字构建，分别是“་”、“ས”、“�
 | Tibetan-Alpaca-13B | 指令模型 | 24.7 GB | [[🤗HF]](https://huggingface.co/ymaoj/Tibetan-Alpaca-13b)|
 ### 💻 推理与部署
 Tibetan-Llama2为基座模型，不具有指令理解能力，推荐使用Tibetan-Alpaca进行交互。
-具体如下，详细请看[[rd]](https://github.com/ymaoj/Tibetan-Llama2-Tibetan-Alpaca/tree/main/inference#readme))
+详细请看[[rd]](https://github.com/ymaoj/Tibetan-Llama2-Tibetan-Alpaca/tree/main/inference#readme))
 #### 🤖 命令行交互形式
 ```
 python inference/inference_hf.py \
