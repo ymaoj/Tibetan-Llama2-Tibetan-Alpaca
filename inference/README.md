@@ -27,7 +27,8 @@ python inference/inference_hf.py \
 ## 📈 web图形界面交互形式
 ```
 python inference/gradio_demo.py \
-     --base_model path_to_Tibetan-alpaca_dir
+     --base_model  path_to_Tibetan-alpaca_dir \
+     --tokenizer_path  path_to_Tibetan-alpaca_dir
 ```
 
 例：
