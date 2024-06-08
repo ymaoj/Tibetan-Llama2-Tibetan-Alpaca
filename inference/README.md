@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ## 🤖 命令行交互形式
 ```
 python inference/inference_hf.py \
-    --base_model path_to__Tibetan-Llama2_or_Tibetan-alpaca_dir \
+    --base_model path_to__Tibetan-Llama2_or_Tibetan-Alpaca_dir \
     --with_prompt \
     --interactive
 ```
@@ -19,7 +19,7 @@ python inference/inference_hf.py \
 
 ```
 python inference/inference_hf.py \
-     --base_model /home/rigthub/Tibetan-Llama2-Tibetan-Alpaca/tibetan-Alpaca-7B \
+     --base_model /home/rigthub/Tibetan-Llama2-Tibetan-Alpaca/Tibetan-Alpaca-7B \
      --with_prompt \
      --interactive
 ```
@@ -27,16 +27,16 @@ python inference/inference_hf.py \
 ## 📈 web图形界面交互形式
 ```
 python inference/gradio_demo.py \
-     --base_model  path_to_Tibetan-alpaca_dir \
-     --tokenizer_path  path_to_Tibetan-alpaca_dir
+     --base_model  path_to_Tibetan-Alpaca_dir \
+     --tokenizer_path  path_to_Tibetan-Alpaca_dir
 ```
 
 例：
 
 ```
 python inference/gradio_demo.py \
-     --base_model  /home/rigthub/Tibetan-Llama2-Tibetan-Alpaca/tibetan-Alpaca-7B \
-     --tokenizer_path  /home/rigthub/Tibetan-Llama2-Tibetan-Alpaca/tibetan-Alpaca-7B
+     --base_model  /home/rigthub/Tibetan-Llama2-Tibetan-Alpaca/Tibetan-Alpaca-7B \
+     --tokenizer_path  /home/rigthub/Tibetan-Llama2-Tibetan-Alpaca/Tibetan-Alpaca-7B
 ```
 
 
