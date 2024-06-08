@@ -16,12 +16,6 @@ python inference/inference_hf.py \
 ```
 
 例：
-```
-python inference/inference_hf.py \
-     --base_model /home/rigthub/Tibetan-Llama2-Tibetan-Alpaca/tibetan-Llama2-7B \
-     --with_prompt \
-     --interactive
-```
 
 ```
 python inference/inference_hf.py \
@@ -37,11 +31,6 @@ python inference/gradio_demo.py \
 ```
 
 例：
-```
-python inference/gradio_demo.py \
-     --base_model  /home/rigthub/Tibetan-Llama2-Tibetan-Alpaca/tibetan-Llama2-7B \
-     --tokenizer_path  /home/rigthub/Tibetan-Llama2-Tibetan-Alpaca/tibetan-Llama2-7B
-```
 
 ```
 python inference/gradio_demo.py \
