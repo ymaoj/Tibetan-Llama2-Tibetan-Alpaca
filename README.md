@@ -103,7 +103,7 @@ Tibetan-Llama2为基座模型，不具有指令理解能力，推荐使用Tibeta
 #### 🤖 命令行交互形式
 ```
 python inference/inference_hf.py \
-    --base_model path_to__Tibetan-Llama2_or_Tibetan-alpaca_dir \
+    --base_model path_to__Tibetan-Llama2_or_Tibetan-Alpaca_dir \
     --with_prompt \
     --interactive
 ```
@@ -111,8 +111,8 @@ python inference/inference_hf.py \
 #### 📈 web图形界面交互形式
 ```
 python inference/gradio_demo.py \
-     --base_model  path_to_Tibetan-alpaca_dir \
-     --tokenizer_path  path_to_Tibetan-alpaca_dir
+     --base_model  path_to_Tibetan-Alpaca_dir \
+     --tokenizer_path  path_to_Tibetan-Alpaca_dir
 ```
 
 
