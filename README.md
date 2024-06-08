@@ -6,7 +6,7 @@
 </div>
 
 ## 🗂️ 目录དཀར་ཆག
-- [ 🔥 Tibetan-Llama2&Tibetan-Alpaca藏文大语言模型](#-Tibetan-Llama2&Tibetan-Alpaca藏文大语言模型)
+- [ 🔥 Tibetan-Llama2&Tibetan-Alpaca藏文大语言模型](#-Tibetan-Llama2&Tibetan-Alpaca藏文大语言模型བོད་ཡིག་གི་སྐད་དབྱིབས་ཆེན་པོ།)
   * [ 📌 藏文词表扩充](#-藏文词表扩充)
   * [ 🌟 参数设置](#-参数设置)
   * [ 🚀 实验数据介绍](#-实验数据介绍)
@@ -14,13 +14,18 @@
     + [ 🌐 客观效果评测](#-客观效果评测)
     + [ 💪 文本生成评测](#-文本生成评测)
     + [ 💡 模型生成示例](#-模型生成示例)
-  * [ 🤝 模型使用](#-模型使用)
+  * [ 🤝 模型使用](#-模型使用དཔེ་དབྱིབས་བེད་སྤྱོད།)
     + [ 🤗 模型下载](#-模型下载)
     + [ 💻 推理与部署](#-推理与部署)
 
 
-# 🔥 Tibetan-Llama2&Tibetan-Alpaca藏文大语言模型བོད་ཡིག་གི་སྐད་དབྱིབས་ཆེན་པོ།
+# 🔥 Tibetan-Llama2 & Tibetan-Alpaca藏文大语言模型བོད་ཡིག་གི་སྐད་དབྱིབས་ཆེན་པོ།
 本项目通过基于LORA的参数高效微调方法，训练了Tibetan-Llama2和Tibetan-Alpaca藏文大语言模型，分别包括7B和13B两种规模，以上模型是基于Llama2模型架构构建的，经过较大规模数据的增量预训练和指令微调，具备了对藏文的深入理解和处理能力。Tibetan-Llama2和Tibetan-Alpaca在藏文理解和生成任务中表现出了较高的效率和性能，并且在多个领域都有广泛的应用前景。
+<div align="center">
+<img src="https://github.com/ymaoj/Tibetan-Llama2-Tibetan-Alpaca/blob/main/inference/Flow-Diagram.png">
+</div>
+
+ 
 ## 📌 藏文词表扩充
 Llama2中只有十五个藏文字构建，分别是“་”、“ས”、“ོ”、“ག”、“ར”、“བ”、“ད”、“ང”、“ི”、“ུ”、“ན”、“མ”、“ེ”、“ལ”、“ྱ”。说明Llama2训练时使用了少量的藏文语料，但其理解和生成藏文文本的能力是有限的。为了增强分词器对藏文文本的支持，首先在藏文纯文本数据39.6G上通过SentencePiece技术训练藏文分词器，随后将藏文分词器合并到原始的Llama2分词器中。因此，得到了一个合并的分词器，称之为Tibetan-Llama2分词器，该分词器的词汇量为54949。其中32000是原始Llama2的词汇量，54949是扩充后的Tibetan-Llama2分词器的新词汇量，扩充了22949个藏文标记。
 
@@ -60,6 +65,7 @@ Llama2中只有十五个藏文字构建，分别是“་”、“ས”、“�
 |     <img width=40/>文本分类    	|     <img width=170/>8193      	|
 ## 🎯 实验结果分析
 由于大语言模型的评估是一项具有挑战性的工作，缺乏标准化的藏文大模型的评估基准，使评估工作变得复杂，尽管本文采用的评估方法有一定的参考性，但也无法准确衡量模型在不同领域的性能。
+  - "综合评估大模型能力仍然是亟待解决的重要课题，单个数据集的结果并不能综合评估模型性能。推荐用户在自己关注的任务上进行测试，选择适配相关任务的模型。"
 ### 🌐 客观效果评测
 本文在自建的机器阅读理解任务多项选择数据集中随机挑选了两千条数据进行0-shot和few-shot（5-shot）实验，其验证集包含1600条数据，测试集包含400条数据。本实验在测试集上比较了四种不同的模型（Tibetan-Llama2-7B、Tibetan-Llama2-13B、Tibetan-Alpaca-7B、Tibetan-Alpaca-13B），性能是通过准确率（Accuracy）这一指标来衡量的。
 |     Model                 	|     <img width=46/>0-shot(%)<img width=46/>    	|     <img width=46/>few-shot(%)<img width=46/>    	|
@@ -81,9 +87,9 @@ Llama2中只有十五个藏文字构建，分别是“་”、“ས”、“�
 |     <img width=40/>文本分类    	|     <img width=60/>76.63                	|     <img width=60/>78.94                 	|
 |     <img width=49/>Avg         	|     <img width=60/>32.79                	|     <img width=60/>38.78                 	|
 ### 💡 模型生成示例
-<img src="https://github.com/ymaoj/Tibetan-Llama2-Tibetan-Alpaca/blob/main/Generate-Example.png">
+<img src="https://github.com/ymaoj/Tibetan-Llama2-Tibetan-Alpaca/blob/main/inference/Generate-Example.png">
 
-## 🤝 模型使用
+## 🤝 模型使用དཔེ་དབྱིབས་བེད་སྤྱོད།
 ### 🤗 模型下载
 | 模型名称                  |   类型   | 大小 |                    下载地址                    |
 | :------------------------ | :------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -92,6 +98,7 @@ Llama2中只有十五个藏文字构建，分别是“་”、“ས”、“�
 | Tibetan-Alpaca-7B | 指令模型 | 12.9 GB | [[🤗HF]](https://huggingface.co/ymaoj/Tibetan-Alpaca-7B) |
 | Tibetan-Alpaca-13B | 指令模型 | 24.7 GB | [[🤗HF]](https://huggingface.co/ymaoj/Tibetan-Alpaca-13b)|
 ### 💻 推理与部署
+Tibetan-Llama2为基座模型，不具有指令理解能力，推荐使用Tibetan-Alpaca进行交互。
 具体如下，详细请看[[rd]](https://github.com/ymaoj/Tibetan-Llama2-Tibetan-Alpaca/tree/main/inference#readme))
 #### 🤖 命令行交互形式
 ```
@@ -149,6 +156,7 @@ python inference/gradio_demo.py \
 
 
 ### 
+指导老师：柔特；才让加。\
 如果您有任何问题，欢迎联系yangmaojia2017@163.com
 
 ## 致谢
